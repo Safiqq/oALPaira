@@ -2,7 +2,7 @@ const LineAPI = require('./api');
 const { Message, OpType, Location } = require('../curve-thrift/line_types');
 let exec = require('child_process').exec;
 
-const myBot = ['u07bea77e0ddbe298a45f2758d834ce48','u79c68416a26d7db88b9d44042dafd4f5','u0e18f39c40973be5f201cc1b00528be4'];
+const myBot = ['ua900e1ba4a91a01b7de658f26471c510'];
 
 
 function isAdminOrBot(param) {
@@ -16,9 +16,9 @@ class LINE extends LineAPI {
         this.receiverID = '';
         this.checkReader = [];
         this.stateStatus = {
-            kick: 0,
+            kick: 1,
             cancel: 0,
-            qr: 0,
+            qr: 1,
         }
     }
 
